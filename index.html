@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Мой проект</title>
+	</head>
+	
+	<body background="1621429591_15-phonoteka_org-p-terrariya-zadnii-fon-15.jpg">
+	    <font color="cornsilk" size="5">
+		    <div align="center">
+			    <h1>Моя любимая игра</h1>
+				<h3>Terraria</h3>
+				<img src="wvw234.jpg" width="500px">
+				<p>Terraria — компьютерная игра в жанре приключенческой песочницы,
+				разработанная американской студией Re-Logic. Была выпущена в 2011 году
+				для компьютеров Microsoft Windows с распространением через систему цифровой
+				дистрибуции Steam. После выхода Terraria была портирована на другие
+				операционные системы для персональных компьютеров и мобильных
+				устройств, а также на игровые приставки. </p>
+			<button onclick=quiz()
+			    style="width:400px;
+				border-radius: 20px;
+				height: 100px;
+				background-image: linear-gradient(lightgreen, darkseagreen, darkolivegreen);
+				font-size: 24px;
+				font-weigth: bold;
+				color: firebrick;">Насколько хорошо ты знаешь Terraria?
+			</button>
+				<h6>Cделанно Malyok 2022</h6>
+			<script>
+			function quiz() {
+				var questions = [
+					{
+						question: "Какая компания создала Terraria?\n(a) Re-logic\n(b) Mojang\n(c) Ubisoft",
+						answer: "a"
+					},
+					{
+						question: "В каком году была создана Terraria?\n(a) 2009\n(b) 2011\n(c) 1999",
+						answer: "b"	
+					},
+					{
+						question: "Как зовут самого финального боса в Terraria?\n(a) Слизень\n(b) Скелетрон\n(c) Мун Лорд",
+						answer: "c"					
+					},
+					{
+						question: "Как называется самое сильное оружие ближнего боя в Terraria?\n(a) Вольфрамовый меч\n(b) Зенит\n(c) Кактусовый меч",
+						answer: "b"					
+					}
+
+				];
+				var score = 0;
+				for (let i=0; i < questions.length; i++) {
+					var response = prompt(questions[i].question);
+					if (response == questions[i].answer) {
+						score++;
+						alert("Верно!");
+					} else {
+						alert("Неверно!");
+					}
+				}
+				alert("Игра закончена, у вас " + score + "/" + questions.length);
+			}
+
+			</script>
+			</div>
+	</body>
+
+</html>
